@@ -1,0 +1,2 @@
+dia = 10 microns
+length = 20 microns

@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : snappyHexMesh -overwrite
+Date   : Jun 13 2023
+Time   : 16:02:11
+Host   : DESKTOP-M99ELVV
+PID    : 1112
+I/O    : uncollated
+Case   : /mnt/d/computations_dir/cavitating_hydrofoil/foam_dir
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read mesh in = 0.14 s
+
+Overall mesh bounding box  : (-0.015 -0.015 -0.015) (0.015 0.015 0.1)
+Relative tolerance         : 1e-06
+Absolute matching distance : 1.22577e-07
+
+
+
+--> FOAM FATAL ERROR: (openfoam-2012)
+Unknown region name bullet for surface cavitating_hydrofoil_10aoa.stl
+Valid region names are 1(patch0)
+
+
+    From Foam::searchableSurfaces::searchableSurfaces(const Foam::IOobject&, const Foam::dictionary&, bool)
+    in file searchableSurfaces/searchableSurfaces/searchableSurfaces.C at line 282.
+
+FOAM exiting
+
