@@ -31,15 +31,15 @@ geometry
     cavitating_hydrofoil_10aoa.stl
     {
         type triSurfaceMesh;
-        name bullet;
+        name cavitating_hydrofoil_10aoa;
 
-        regions
+       regions
         {
-            bullet
+            cavitating_hydrofoil_10aoa
             {
-                name bullet;
+               name cavitating_hydrofoil_10aoa;
             }
-        }
+        } 
     }
 
     refinement1
@@ -116,7 +116,7 @@ castellatedMeshControls
 
     refinementSurfaces
     {
-        bullet
+        cavitating_hydrofoil_10aoa
         {
             // Surface-wise min and max refinement level
             level (4 4);
@@ -163,7 +163,7 @@ castellatedMeshControls
     // section reachable from the locationInMesh is kept.
     // NOTE: This point should never be on a face, always inside a cell, even
     // after refinement.
-    locationInMesh (0 0 -10e-3);
+    locationInMesh (0.001 0 -0.007);
 
     allowFreeStandingZoneFaces false;
 }
