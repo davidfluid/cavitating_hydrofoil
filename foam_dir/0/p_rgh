@@ -36,7 +36,7 @@ boundaryField
         type            symmetry;
     }
 
-    bullet
+    cavitating_hydrofoil_10aoa
     {
         type            fixedFluxPressure;
     }
