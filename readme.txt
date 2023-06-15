@@ -1,1 +1,1 @@
-case directory for cavitating hydrofoil computations
+case dir for cavitating hydrofoil computations
