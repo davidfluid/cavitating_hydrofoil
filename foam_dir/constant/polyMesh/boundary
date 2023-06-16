@@ -1,0 +1,48 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+4
+(
+    inlet
+    {
+        type            patch;
+        nFaces          225;
+        startFace       1362585;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          225;
+        startFace       1362810;
+    }
+    walls
+    {
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          4548;
+        startFace       1363035;
+    }
+    cavitating_hydrofoil_10aoa
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          33600;
+        startFace       1367583;
+    }
+)
+
+// ************************************************************************* //
